@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Campus Hall Booking System</title>
+    <style>
+        body { font-family: Arial; margin: 50px; }
+        h1 { color: #333; }
+        nav a {
+            display: block;
+            margin: 10px 0;
+            font-size: 18px;
+            color: blue;
+            text-decoration: none;
+        }
+        nav a:hover { text-decoration: underline; }
+        .welcome {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Campus Hall Booking System</h1>
+
+    <p class="welcome">
+        Welcome, {{ user.username }}!
+    </p>
+
+    <nav>
+        <a href="/book/">🏛️ Book a Hall</a>
+        <a href="/my-bookings/">📋 My Bookings</a>
+        <a href="/logout/">🚪 Logout</a>
+    </nav>
+
+</body>
+</html>
